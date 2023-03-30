@@ -1,0 +1,1173 @@
+{
+	"info": {
+		"_postman_id": "477355fa-9409-4062-b57f-6cf0abb96188",
+		"name": "Medium Lite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25074095"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"fazliddin@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/sign-in",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"sign-in"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sign In",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"fazliddin@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/sign-in",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"sign-in"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-l7sU5d3qGe1dwRThF+D3fCIdxjs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 10:21:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjgwMTcxNzAwLCJleHAiOjE2ODA3NzY1MDB9.FfbA06hh-peOVv8duGwIEcOirQLOnQdecql0ScSX7jA\",\n    \"user\": {\n        \"id\": 2,\n        \"email\": \"fazliddin@gmail.com\"\n    }\n}"
+						},
+						{
+							"name": "Sign In",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"fazliddin@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/sign-in",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"sign-in"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "85"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"55-9vDnE6v3jc0rGLhFuNjadxhvIfg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 12:38:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"type\": \"login\",\n        \"description\": \"username or password incorrect\",\n        \"fields\": []\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"fazliddin@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"confirm_password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/sign-up",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"sign-up"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sign Up",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"email@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"confirm_password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/sign-up",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"59-rgxxTls4MAu6LEDE4QddKYPkcqc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 10:20:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"type\": \"alreadyExists\",\n        \"description\": \"item already exists\",\n        \"fields\": [\n            \"email\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "Sign Up",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"email@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"confirm_password\": \"password1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/sign-up",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b0-8PoU4b48mCgquzTD02h4EmO/oEU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 10:20:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"type\": \"validation\",\n        \"description\": \"validation\",\n        \"fields\": {\n            \"params\": [],\n            \"query\": [],\n            \"body\": [\n                \"body.confirm_password must be one of the following values: Ref(password)\"\n            ]\n        }\n    }\n}"
+						},
+						{
+							"name": "Sign Up",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"fazliddin@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"confirm_password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth/sign-up",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-/Vkap/ar8ZkAC4vlI6PB5zfO/Z0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 10:21:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjgwMTcxNjc0LCJleHAiOjE2ODA3NzY0NzR9.15GESM2XplB3IDX31qYfBsqW9p-Z1AqvwlqoFrhm72c\",\n    \"user\": {\n        \"id\": 2,\n        \"email\": \"fazliddin@gmail.com\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user?limit=10&page=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user?limit=10&page=1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5f-bFysqXk136eW6Ku8L5Ip8TdwkBw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 10:50:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 2,\n    \"items\": [\n        {\n            \"id\": 1,\n            \"email\": \"email@gmail.com\"\n        },\n        {\n            \"id\": 2,\n            \"email\": \"fazliddin@gmail.com\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user?limit=10&page=0",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"95-JUCzorfVILOAwdW7g4nJOt6R36Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 10:50:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"type\": \"validation\",\n        \"description\": \"validation\",\n        \"fields\": {\n            \"params\": [],\n            \"query\": [\n                \"query.page must be greater than or equal to 1\"\n            ],\n            \"body\": []\n        }\n    }\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "List Post By Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post?author_id=2&limit=10&page=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							],
+							"query": [
+								{
+									"key": "author_id",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Post By Author",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/post?author_id=2&limit=10&page=1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post"
+									],
+									"query": [
+										{
+											"key": "author_id",
+											"value": "2"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "593"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"251-6+f2TtdK2qa7kkeok6+EN2Mm1gg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 12:33:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 4,\n    \"items\": [\n        {\n            \"id\": 1,\n            \"title\": \"New Post\",\n            \"content\": \"Very amazing post enjoy while reading\",\n            \"reading_time\": 1,\n            \"author\": {\n                \"id\": 2,\n                \"email\": \"fazliddin@gmail.com\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"title\": \"New Post\",\n            \"content\": \"Very amazing post enjoy while reading\",\n            \"reading_time\": 1,\n            \"author\": {\n                \"id\": 2,\n                \"email\": \"fazliddin@gmail.com\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"title\": \"New Post\",\n            \"content\": \"Very amazing post enjoy while reading\",\n            \"reading_time\": 1,\n            \"author\": {\n                \"id\": 2,\n                \"email\": \"fazliddin@gmail.com\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"title\": \"New Post\",\n            \"content\": \"Very amazing post enjoy while reading\",\n            \"reading_time\": 1,\n            \"author\": {\n                \"id\": 2,\n                \"email\": \"fazliddin@gmail.com\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create One",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"New Post\",\r\n    \"content\": \"Very amazing post enjoy while reading\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/post",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create One",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"New Post\",\r\n    \"content\": \"Very amazing post enjoy while reading\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/post",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-4PocAGSAJf3OyUiayUhgBC55vI0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 12:33:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"title\": \"New Post\",\n    \"content\": \"Very amazing post enjoy while reading\",\n    \"reading_time\": 1,\n    \"author\": {\n        \"id\": 2,\n        \"email\": \"fazliddin@gmail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get One By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/post/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"post",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get One By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/post/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "142"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8e-VrQ2UUXviDNoOwA1xEgsCJtGPlY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 12:17:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"title\": \"New Post\",\n    \"content\": \"Very amazing post enjoy while reading\",\n    \"reading_time\": 1,\n    \"author\": {\n        \"id\": 2,\n        \"email\": \"fazliddin@gmail.com\"\n    }\n}"
+						},
+						{
+							"name": "Get One By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/post/:id",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"post",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,content-type"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store, no-cache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-qF4ltK5ck6G0iE214BXB+kZX0JY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Mar 2023 12:17:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": {\n        \"type\": \"notExists\",\n        \"description\": \"item not exists\",\n        \"fields\": []\n    }\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:3000/v1",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
